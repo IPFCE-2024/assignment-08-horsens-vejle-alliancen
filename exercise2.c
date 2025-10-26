@@ -6,8 +6,10 @@
  * The list should be sorted in-place from smallest to largest.
  * No new nodes should be allocated - only pointers should be changed.
  */
-
-#include "exercise2.h"
+#include <stdio.h>
+#include <assert.h>
+#include <stdbool.h>
+#include "include\exercise2.h"
 
 /* 
  * Sort a singly linked list in-place using insertion sort
@@ -18,7 +20,39 @@
  * Returns pointer to the new head of the sorted list.
  */
 node* isort(node* list) {
-    return NULL; // Placeholder implementation
+
+ node* sorted=list; //extract head as new sorted list
+ node* rest=list->next;
+ sorted->next=NULL;
+ 
+ while (rest!=NULL) //iterate unsorted list
+ {
+    //extract first element
+    node* element=rest;
+    rest=rest->next;
+    element->next=NULL;
+
+    //insert element in sorted list
+    if ((sorted->data)>(element->data))
+    { 
+        //element is new smallest, insert as first
+        element->next=sorted;
+        sorted=element;
+    }
+    else
+    {
+        //find correct position 
+        node* current = sorted;
+        while (current->next != NULL && current->next->data < element->data)
+        {
+            current = current->next;
+        }
+        //insert element after current
+        element->next = current->next;
+        current->next = element;
+    }
+ }
+ return sorted;
 }
 
 /* Helper function to print the list */
