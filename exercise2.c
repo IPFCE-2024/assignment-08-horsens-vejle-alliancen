@@ -6,7 +6,7 @@
  * The list should be sorted in-place from smallest to largest.
  * No new nodes should be allocated - only pointers should be changed.
  */
-#include "include\exercise2.h"
+#include "exercise2.h"
 
 /* 
  * Sort a singly linked list in-place using insertion sort

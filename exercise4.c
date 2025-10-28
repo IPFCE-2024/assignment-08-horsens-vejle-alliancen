@@ -6,7 +6,7 @@
  * You must NOT access the stack implementation directly.
  * This demonstrates the concept of information hiding.
  */
-#include "include\exercise4.h"
+#include "exercise4.h"
 
 /* 
  * Stack operations from Assignment 7

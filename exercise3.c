@@ -5,7 +5,7 @@
  * Implement a queue using singly-linked lists.
  * The queue should maintain FIFO (First-In, First-Out) order.
  */
-#include "include\exercise3.h"
+#include "exercise3.h"
 
 /* 
  * Initialize an empty queue
