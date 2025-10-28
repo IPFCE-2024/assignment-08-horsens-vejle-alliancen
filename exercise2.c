@@ -6,9 +6,6 @@
  * The list should be sorted in-place from smallest to largest.
  * No new nodes should be allocated - only pointers should be changed.
  */
-#include <stdio.h>
-#include <assert.h>
-#include <stdbool.h>
 #include "include\exercise2.h"
 
 /* 

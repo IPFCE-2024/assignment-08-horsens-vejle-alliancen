@@ -6,8 +6,6 @@
  * You must NOT access the stack implementation directly.
  * This demonstrates the concept of information hiding.
  */
-#include <stdio.h>
-#include <assert.h>
 #include "include\exercise4.h"
 
 /* 

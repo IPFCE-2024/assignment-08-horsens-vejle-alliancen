@@ -5,8 +5,6 @@
  * Implement a queue using singly-linked lists.
  * The queue should maintain FIFO (First-In, First-Out) order.
  */
-#include <stdio.h>
-#include <assert.h>
 #include "include\exercise3.h"
 
 /* 
